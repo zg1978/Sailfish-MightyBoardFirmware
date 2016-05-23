@@ -312,8 +312,8 @@ void SplashScreen::update(LiquidCrystalSerial& lcd, bool forceRedraw) {
 		if ( hold_on ) {
 			lcd.moveWriteFromPgmspace(0, 1, CLEAR_MSG);
 			lcd.setRow(1);
-               		lcd.writeFromPgmspace(SPLASH_SRAM_MSG);
-                	lcd.writeFloat((float)StackCount(), 0, LCD_SCREEN_WIDTH);
+            lcd.writeFromPgmspace(SPLASH_SRAM_MSG);
+            lcd.writeFloat((float)StackCount(), 0, LCD_SCREEN_WIDTH);
 		}
 		else
 			lcd.moveWriteFromPgmspace(0, 1, SPLASH2_MSG);
