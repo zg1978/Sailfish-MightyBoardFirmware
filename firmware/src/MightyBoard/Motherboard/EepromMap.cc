@@ -133,9 +133,16 @@ typedef struct Color {
 void setDefaultLedEffects(uint16_t eeprom_base)
 {
      // default color is white
+#if 0
      eeprom_write_byte(
 	  (uint8_t*)(eeprom_base + blink_eeprom_offsets::BASIC_COLOR_OFFSET),
 	  LED_DEFAULT_COLOR);
+#else
+     eeprom_write_byte(
+	  (uint8_t*)(eeprom_base + blink_eeprom_offsets::BASIC_COLOR_OFFSET),
+	  LED_DEFAULT_WHITE);
+#endif
+
      eeprom_write_byte(
 	  (uint8_t*)(eeprom_base + blink_eeprom_offsets::LED_HEAT_OFFSET),
 	  LED_DEFAULT_HEAT_COLOR);
