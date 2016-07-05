@@ -340,7 +340,7 @@ platforms = {
           'defines' : [ 'BUILD_STATS', 'ALTERNATE_UART',
                         'PLATFORM_SPLASH1_MSG=\\\"Sailfish Creator Pro\\\"',
                         'PLATFORM_TOOLHEAD_OFFSET_X=3201',
-                        'PLATFORM_THE_REPLICATOR_STR=\\\"Creator X / Pro\\\"',
+                        'PLATFORM_THE_REPLICATOR_STR=\\\"FF Creator Pro\\\"',
                         'HEATERS_ON_STEROIDS', 'AUTO_LEVEL',
                         'PSTOP_ZMIN_LEVEL', 'HAS_RGB_LED', 'RGB_LED_MENU',
                         'EEPROM_MENU_ENABLE' ]
