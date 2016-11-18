@@ -123,13 +123,15 @@ const static uint16_t D_TERM_OFFSET = 4;
 namespace replicator_axis_offsets{
 
 #if !defined(PLATFORM_X_OFFSET_STEPS)
-#define X_OFFSET_STEPS 14309L
+//#define X_OFFSET_STEPS 14309L
+#define X_OFFSET_STEPS 14219L
 #else
 #define X_OFFSET_STEPS PLATFORM_X_OFFSET_STEPS
 #endif
 
 #if !defined(PLATFORM_Y_OFFSET_STEPS)
-#define Y_OFFSET_STEPS 6778L
+//#define Y_OFFSET_STEPS 6778L
+#define Y_OFFSET_STEPS 6688L
 #else
 #define Y_OFFSET_STEPS PLATFORM_Y_OFFSET_STEPS
 #endif
@@ -152,7 +154,8 @@ namespace replicator_axis_lengths{
 	// These are the maximum lengths of all axis, and are populated from Replicator G
 	// on connection.  These are reasonable defaults for X/Y/Z/A/B
 	// Each one is the length(in mm's) * steps_per_mm  (from the xml file and the result is rounded down)
-	const static uint32_t axis_lengths[5] = {227L, 148L, 150L, 100000L, 100000L};
+	//const static uint32_t axis_lengths[5] = {227L, 148L, 150L, 100000L, 100000L};
+	const static uint32_t axis_lengths[5] = {230L, 150L, 150L, 100000L, 100000L};
 #else
 	const static uint32_t axis_lengths[5] = PLATFORM_AXIS_LENGTHS;
 #endif
